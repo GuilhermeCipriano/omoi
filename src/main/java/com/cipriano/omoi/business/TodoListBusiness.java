@@ -45,7 +45,7 @@ public class TodoListBusiness {
         logger.info("TodoListBusiness :: updateTodoList :: Start");
 
         try {
-            if(todoList != null && todoList.getId() != null) {
+            if(todoList != null) {
                 logger.info("TodoListBusiness :: updateTodoList :: GoTo :: TodoListService");
                 logger.debug("TodoListBusiness :: updateTodoList :: GoTo :: TodoListService {}", todoList.toString());
                 TodoListEntity todoListEntity = modelMapper.map(todoList, TodoListEntity.class);
@@ -66,7 +66,7 @@ public class TodoListBusiness {
         logger.info("TodoListBusiness :: deleteTodoList :: Start");
 
         try {
-            if(todoList != null && todoList.getId() != null) {
+            if(todoList != null) {
                 logger.info("TodoListBusiness :: deleteTodoList :: GoTo :: TodoListService");
                 logger.debug("TodoListBusiness :: deleteTodoList :: GoTo :: TodoListService {}", todoList.toString());
                 TodoListEntity todoListEntity = modelMapper.map(todoList, TodoListEntity.class);
@@ -87,7 +87,7 @@ public class TodoListBusiness {
         logger.info("TodoListBusiness :: createTodoList :: Start");
 
         try {
-            if(todoList != null && todoList.getId() != null) {
+            if(todoList != null) {
                 logger.info("TodoListBusiness :: createTodoList :: GoTo :: TodoListService");
                 logger.debug("TodoListBusiness :: createTodoList :: GoTo :: TodoListService {}", todoList.toString());
                 TodoListEntity todoListEntity = modelMapper.map(todoList, TodoListEntity.class);

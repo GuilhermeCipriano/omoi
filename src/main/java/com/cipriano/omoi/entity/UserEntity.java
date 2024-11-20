@@ -30,7 +30,7 @@ public class UserEntity {
     @Column(name = "created_at", nullable = false)
     private Date createdAt;
 
-    @Column(name = "edited_at", nullable = false)
+    @Column(name = "edited_at")
     private Date edited_at;
 
     @Column(name = "enabled", nullable = false)

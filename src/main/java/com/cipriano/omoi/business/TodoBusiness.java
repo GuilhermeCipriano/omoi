@@ -44,7 +44,7 @@ public class TodoBusiness {
         logger.info("TodoBusiness :: updateTodo :: Start");
 
         try {
-            if(todo != null && todo.getId() != null) {
+            if(todo != null && todo != null) {
                 TodoEntity todoEntity = modelMapper.map(todo, TodoEntity.class);
                 logger.info("TodoBusiness :: updateTodo :: GoTo :: TodoService");
                 this.todoService.updateTodoEntity(todoEntity);
@@ -65,7 +65,7 @@ public class TodoBusiness {
         logger.info("TodoBusiness :: deleteTodo :: Start");
 
         try {
-            if(todo != null && todo.getId() != null) {
+            if(todo != null) {
                 TodoEntity todoEntity = modelMapper.map(todo, TodoEntity.class);
                 logger.info("TodoBusiness :: deleteTodo :: GoTo :: TodoService");
                 this.todoService.deleteTodoEntity(todoEntity);
@@ -85,7 +85,7 @@ public class TodoBusiness {
         logger.info("TodoBusiness :: createTodo :: Start");
 
         try {
-            if(todo != null && todo.getId() != null) {
+            if(todo != null) {
                 TodoEntity todoEntity = modelMapper.map(todo, TodoEntity.class);
                 logger.info("TodoBusiness :: createTodo :: GoTo :: TodoService");
                 return modelMapper.map(this.todoService.createTodoEntity(todoEntity), Todo.class);

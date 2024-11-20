@@ -2,6 +2,7 @@ package com.cipriano.omoi.domain;
 
 import com.cipriano.omoi.entity.TodoListEntity;
 import lombok.Data;
+
 import java.util.Date;
 
 @Data
@@ -15,5 +16,6 @@ public class Todo {
     private boolean favorited;
     private Date createdAt;
     private Date editedAt;
+
 
 }
